@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoViewController" customModule="BigIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="imageAvatar" destination="tzs-Ip-7Lh" id="Goe-nc-mIH"/>
+                <outlet property="labelAccount" destination="P4T-4n-LhL" id="cgf-or-dyN"/>
+                <outlet property="labelBirth" destination="U7D-H9-rO4" id="CE4-Bd-rF1"/>
+                <outlet property="labelGender" destination="17g-xK-zWd" id="Cap-oQ-Joy"/>
+                <outlet property="labelNick" destination="lMH-uC-it1" id="XQ8-Bu-UbB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsu-Um-jv3">
+                    <rect key="frame" x="0.0" y="34" width="72" height="30"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="btnBackClick:" destination="-1" eventType="touchUpInside" id="deR-ka-nBx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="个人资料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWF-DQ-dmM">
+                    <rect key="frame" x="250" y="34" width="100" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpR-Kk-M23">
+                    <rect key="frame" x="7" y="90" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9V-bQ-kZc">
+                    <rect key="frame" x="7" y="146" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="image_99_baoyou" translatesAutoresizingMaskIntoConstraints="NO" id="tzs-Ip-7Lh">
+                    <rect key="frame" x="538" y="78" width="46" height="46"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="eeCircleMode" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ja-JW-UXx">
+                    <rect key="frame" x="0.0" y="73" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Plc-4m-lp5">
+                    <rect key="frame" x="0.0" y="129" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TMo-Sq-sml">
+                    <rect key="frame" x="0.0" y="178" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB9-zZ-wvB">
+                    <rect key="frame" x="7" y="244" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-Lf-Uh3">
+                    <rect key="frame" x="0.0" y="227" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qrw-7B-1kn">
+                    <rect key="frame" x="0.0" y="276" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQO-b2-h46">
+                    <rect key="frame" x="0.0" y="325" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnD-Nj-YLx">
+                    <rect key="frame" x="7" y="195" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="生日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdO-9A-pQM">
+                    <rect key="frame" x="7" y="293" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="m15092058320" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4T-4n-LhL">
+                    <rect key="frame" x="469" y="146" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="保密" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17g-xK-zWd">
+                    <rect key="frame" x="469" y="244" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="nick" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMH-uC-it1">
+                    <rect key="frame" x="469" y="195" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="1991-02-15" textAlignment="right" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7D-H9-rO4">
+                    <rect key="frame" x="469" y="293" width="115" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7m-1k-74u">
+                    <rect key="frame" x="200" y="350" width="200" height="30"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.15686274509803921" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                    <state key="normal" title="退出登录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="eeBorderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="eeCornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="eeBorderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onLogoff:" destination="-1" eventType="touchUpInside" id="nAY-CC-Pl0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qrw-7B-1kn" secondAttribute="trailing" id="1nc-6r-Qp3"/>
+                <constraint firstItem="Qrw-7B-1kn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4lf-Q1-f41"/>
+                <constraint firstItem="u7m-1k-74u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8Go-ud-N1T"/>
+                <constraint firstItem="Plc-4m-lp5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bz0-n0-bFN"/>
+                <constraint firstAttribute="trailing" secondItem="U7D-H9-rO4" secondAttribute="trailing" constant="7" id="GaG-5g-QOy"/>
+                <constraint firstAttribute="trailing" secondItem="TMo-Sq-sml" secondAttribute="trailing" id="Inn-Zs-pBM"/>
+                <constraint firstAttribute="trailing" secondItem="dDU-Lf-Uh3" secondAttribute="trailing" id="Mrc-Cs-6PK"/>
+                <constraint firstAttribute="trailing" secondItem="P4T-4n-LhL" secondAttribute="trailing" constant="7" id="O5Y-PR-F49"/>
+                <constraint firstItem="TQO-b2-h46" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OjT-58-gub"/>
+                <constraint firstItem="dDU-Lf-Uh3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ou9-yC-Bal"/>
+                <constraint firstItem="TMo-Sq-sml" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qta-aO-Ll5"/>
+                <constraint firstAttribute="trailing" secondItem="lMH-uC-it1" secondAttribute="trailing" constant="7" id="RWM-ku-pcG"/>
+                <constraint firstItem="lWF-DQ-dmM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wrv-05-jD2"/>
+                <constraint firstAttribute="trailing" secondItem="TQO-b2-h46" secondAttribute="trailing" id="cwk-AL-YJH"/>
+                <constraint firstItem="7Ja-JW-UXx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lmw-jX-4gh"/>
+                <constraint firstAttribute="trailing" secondItem="7Ja-JW-UXx" secondAttribute="trailing" id="m1A-LS-hJ9"/>
+                <constraint firstAttribute="trailing" secondItem="tzs-Ip-7Lh" secondAttribute="trailing" constant="7" id="m2D-oe-TFa"/>
+                <constraint firstAttribute="trailing" secondItem="17g-xK-zWd" secondAttribute="trailing" constant="7" id="mlz-cc-beZ"/>
+                <constraint firstAttribute="trailing" secondItem="Plc-4m-lp5" secondAttribute="trailing" id="ycQ-Mn-VTM"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_99_baoyou" width="39" height="39"/>
+    </resources>
+</document>

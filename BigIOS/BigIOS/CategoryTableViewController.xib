@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryTableViewController" customModule="BigIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="xHj-2I-zPy" id="6Wj-NT-MfA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="发现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-dL-2wj">
+                    <rect key="frame" x="279" y="34" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4h-EP-ZYI">
+                    <rect key="frame" x="0.0" y="73" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7j-xB-Wt6">
+                    <rect key="frame" x="0.0" y="34" width="72" height="30"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="onBackbtnClick:" destination="-1" eventType="touchUpInside" id="QEv-Rc-97H"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xHj-2I-zPy">
+                    <rect key="frame" x="0.0" y="74" width="600" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xHj-2I-zPy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Cp-HK-TWG"/>
+                <constraint firstAttribute="trailing" secondItem="xHj-2I-zPy" secondAttribute="trailing" id="HFp-9R-yJi"/>
+                <constraint firstItem="cNB-dL-2wj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Icl-Jt-VfI"/>
+                <constraint firstItem="xHj-2I-zPy" firstAttribute="top" secondItem="Q4h-EP-ZYI" secondAttribute="bottom" constant="-73" id="S0K-ma-Df6"/>
+                <constraint firstAttribute="bottom" secondItem="xHj-2I-zPy" secondAttribute="bottom" id="Sfx-ND-Hyi"/>
+                <constraint firstAttribute="trailing" secondItem="Q4h-EP-ZYI" secondAttribute="trailing" id="Vzh-vq-7c0"/>
+                <constraint firstItem="Q4h-EP-ZYI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nY4-z8-QAw"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
